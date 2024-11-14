@@ -1,0 +1,55 @@
+query {
+    listEmployees(page: 1, limit: 10, sort: "name") {
+      id
+      name
+      age
+      class_
+      subjects
+      attendance
+    }
+  }
+
+
+  query {
+  getEmployee(id: "__employeeid__") {
+    id
+    name
+    age
+    class_
+    subjects
+    attendance
+  }
+}
+
+
+mutation {
+  addEmployee(
+    name: "John Doe",
+    age: 30,
+    class_: "A",
+    subjects: ["Math", "Science"],
+    attendance: 95
+  ) {
+    id
+    name
+    age
+    class_
+  }
+}
+
+
+mutation {
+  updateEmployee(
+    id: "employee-id",
+    name: "Jane Doe",
+    age: 31,
+    class_: "B"
+  ) {
+    id
+    name
+    age
+    class_
+  }
+}
+
+  
