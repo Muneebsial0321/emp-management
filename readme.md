@@ -31,5 +31,5 @@ A GraphQL API to manage employee data with fields such as ID, name, age, class, 
 
 - Node.js
 - GraphQL
-- Database setup for employee data (e.g., MongoDB, PostgreSQL)
+- Database (optional, Not Congfiured yet) (e.g., MongoDB, PostgreSQL)
 
